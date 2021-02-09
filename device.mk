@@ -36,7 +36,9 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-aosp
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += device/realme/RMX1801
+PRODUCT_SOONG_NAMESPACES += \
+    device/realme/RMX1801 \
+    packages/apps/Bluetooth
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -158,7 +160,7 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session \
     libbthost_if
 
-# Bluetooth
+# Bluetooth 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
