@@ -31,6 +31,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
+# Board
+TARGET_USES_QCOM_CHIPSET := true
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/realme/RMX1801 \
