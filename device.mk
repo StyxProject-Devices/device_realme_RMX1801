@@ -40,8 +40,7 @@ TARGET_USES_QCOM_CHIPSET := true
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/realme/RMX1801 \
-    packages/apps/Bluetooth
+    device/realme/RMX1801
 
 # Permissions
 PRODUCT_COPY_FILES += \
